@@ -1,0 +1,14 @@
+{
+  "name": "kefri-tnms01",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repository containing an auth backend for Google/GitHub OAuth and email verification.",
+  "scripts": {
+    "start:auth": "cd auth-backend && node index.js",
+    "dev:auth": "cd auth-backend && nodemon index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

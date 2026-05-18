@@ -10,12 +10,39 @@ Node.js/Express authentication backend with:
 
 ## Setup
 
-```bash
-npm install
-cp .env.example .env
-# Fill in your .env values
-node index.js
-```
+1. Copy the environment example:
+   ```bash
+   cp .env.example .env
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the backend:
+   ```bash
+   npm start
+   ```
+
+> Use `npm run dev` if you want live reload through `nodemon`.
+
+### Required `.env` values
+
+- `PORT`
+- `CLIENT_URL`
+- `JWT_SECRET`
+- `SESSION_SECRET`
+- `GOOGLE_CLIENT_ID`
+- `GOOGLE_CLIENT_SECRET`
+- `GOOGLE_CALLBACK_URL`
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET`
+- `GITHUB_CALLBACK_URL`
+- `EMAIL_HOST`
+- `EMAIL_PORT`
+- `EMAIL_SECURE`
+- `EMAIL_USER`
+- `EMAIL_PASS`
+- `EMAIL_FROM`
 
 ---
 
@@ -65,7 +92,7 @@ Register a new user and trigger verification.
   "verification_token":  "<jwt>"
 }
 ```
-> Store `verification_token` on the client — you'll send it back with the OTP.
+> Store `verification_token` on the client — you'll send it back with the OTP the user enters.
 
 ---
 
@@ -124,7 +151,7 @@ Sets `session_token` cookie.
 
 #### `GET /auth/verify/status?token=<jwt>`
 
-Optional: check if a verification token is still valid (useful for frontend countdown).
+Optional: check if a verification token is still valid.
 
 ```json
 {
@@ -182,3 +209,12 @@ Swap to [Resend](https://resend.com) or SendGrid:
 - Magic link token is single-use by design (JWT has no state; add a `used_tokens` store for true single-use)
 - `session_token` is HttpOnly + Secure in production — not accessible via JavaScript
 - Rate limiter on all `/auth/*` routes: 20 requests per 15 minutes
+
+
+<p align="center">
+  <a href="#"><img src="https://github.com/Pantane1/nf/blob/main/public/ph.png" alt="ph-logo">
+</p>
+
+<p align="center">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ACAF50&center=true&vCenter=true&multiline=false&lines=LONG+LIVE+THE+NJAGI'S" alt="">
+</p>
