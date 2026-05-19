@@ -26,3 +26,12 @@ Authentication backend project with Google/GitHub OAuth plus email verification 
 
 - `npm run start:auth` — start auth backend from the repo root
 - `npm run dev:auth` — start auth backend with `nodemon`
+
+
+<p align="center">
+  <a href="#"><img src="https://github.com/Pantane1/nf/blob/main/public/ph.png" alt="ph-logo">
+</p>
+
+<p align="center">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ACAF50&center=true&vCenter=true&multiline=false&lines=LONG+LIVE+THE+NJAGI'S" alt="">
+</p>
