@@ -208,7 +208,7 @@ Swap to [Resend](https://resend.com) or SendGrid:
 - OTP is embedded in the JWT — no DB lookup required for validation
 - Magic link token is single-use by design (JWT has no state; add a `used_tokens` store for true single-use)
 - `session_token` is HttpOnly + Secure in production — not accessible via JavaScript
-- Rate limiter on all `/auth/*` routes: 20 requests per 15 minutes
+- Rate limiter on all `/auth/*` routes: 20 requests per 15 minuutes
 
 
 <p align="center">
